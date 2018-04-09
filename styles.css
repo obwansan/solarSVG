@@ -1,8 +1,107 @@
+
 #container {
-    padding-top: 250px;
-    padding-left: 400px;
+    background-color: #000000;
+    width: 500px;
+    height: 500px;
 }
 
 #sun {
-    fill: #FEE734;
+    fill: url(#grad1);
+    position: absolute;
+    top: 200px;
+    left: 200px;
 }
+
+#mercury {
+    fill: #D4B79E;
+    animation: mercuryOrbit 5s linear infinite;
+}
+
+#venus {
+    fill: #AC682C;
+    animation: venusOrbit 4s linear infinite;
+}
+
+#earth {
+    fill: #90B57A;
+    animation: earthOrbit 6s linear infinite;
+}
+
+.innerOrbit {
+    stroke: #5D5B5E;
+    stroke-width: 1;
+    stroke-opacity: 0.8;
+    fill-opacity: 0;
+}
+
+.outerOrbit {
+    stroke: #5D5B5E;
+    stroke-width: 1;
+    stroke-opacity: 1;
+    fill-opacity: 0;
+}
+
+/*************************
+keyFrames
+**************************/
+
+@keyframes mercuryOrbit {
+    from {
+        transition-timing-function: linear;
+        transform:  rotate(0deg)
+                    translate(-40px)
+                    rotate(0deg)
+
+    }
+    to {
+        transform: rotate(360deg)
+                    translate(-40px)
+                    rotate(-360deg)
+
+    }
+}
+
+@keyframes earthOrbit {
+    from {
+        transition-timing-function: linear;
+        transform:  rotate(0deg)
+        translate(-70px)
+        rotate(0deg)
+
+    }
+    to {
+        transform: rotate(360deg)
+        translate(-70px)
+        rotate(-360deg)
+
+    }
+}
+
+@keyframes venusOrbit {
+    from {
+        transition-timing-function: linear;
+        transform: rotate(0deg)
+        translate(-55px)
+        rotate(0deg)
+
+    }
+    to {
+        transform: rotate(360deg)
+        translate(-55px)
+        rotate(-360deg)
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
