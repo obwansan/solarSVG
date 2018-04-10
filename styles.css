@@ -1,12 +1,12 @@
 
 #container {
     background-color: #000000;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
 }
 
 #sun {
-    fill: url(#grad1);
+    fill: url(#sunGrad);
     position: absolute;
     top: 200px;
     left: 200px;
@@ -27,17 +27,32 @@
     animation: earthOrbit 6s linear infinite;
 }
 
+#mars {
+    fill: #D84B32;
+    animation: marsOrbit 7s linear infinite;
+}
+
+#jupiter {
+    fill: #C8BDAB;
+    animation: jupiterOrbit 9s linear infinite;
+}
+
+#saturn {
+    fill: #E8BE87;
+    animation: saturnOrbit 8s linear infinite;
+}
+
 .innerOrbit {
     stroke: #5D5B5E;
     stroke-width: 1;
-    stroke-opacity: 0.8;
+    stroke-opacity: 0.5;
     fill-opacity: 0;
 }
 
 .outerOrbit {
     stroke: #5D5B5E;
-    stroke-width: 1;
-    stroke-opacity: 1;
+    stroke-width: 1.5;
+    stroke-opacity: 0.7;
     fill-opacity: 0;
 }
 
@@ -61,22 +76,6 @@ keyFrames
     }
 }
 
-@keyframes earthOrbit {
-    from {
-        transition-timing-function: linear;
-        transform:  rotate(0deg)
-        translate(-70px)
-        rotate(0deg)
-
-    }
-    to {
-        transform: rotate(360deg)
-        translate(-70px)
-        rotate(-360deg)
-
-    }
-}
-
 @keyframes venusOrbit {
     from {
         transition-timing-function: linear;
@@ -93,6 +92,69 @@ keyFrames
     }
 }
 
+@keyframes earthOrbit {
+    from {
+        transition-timing-function: linear;
+        transform:  rotate(0deg)
+        translate(-70px)
+        rotate(0deg)
+
+    }
+    to {
+        transform: rotate(360deg)
+        translate(-70px)
+        rotate(-360deg)
+
+    }
+}
+
+@keyframes marsOrbit {
+    from {
+        transition-timing-function: linear;
+        transform: rotate(0deg)
+        translate(-90px)
+        rotate(0deg)
+
+    }
+    to {
+        transform: rotate(360deg)
+        translate(-90px)
+        rotate(-360deg)
+
+    }
+}
+
+@keyframes jupiterOrbit {
+    from {
+        transition-timing-function: linear;
+        transform: rotate(0deg)
+        translate(-120px)
+        rotate(0deg)
+
+    }
+    to {
+        transform: rotate(360deg)
+        translate(-120px)
+        rotate(-360deg)
+
+    }
+}
+
+@keyframes saturnOrbit {
+    from {
+        transition-timing-function: linear;
+        transform: rotate(0deg)
+        translate(-150px)
+        rotate(0deg)
+
+    }
+    to {
+        transform: rotate(360deg)
+        translate(-150px)
+        rotate(-360deg)
+
+    }
+}
 
 
 

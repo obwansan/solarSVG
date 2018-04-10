@@ -7,22 +7,30 @@
 <body>
 
 <div id="container">
-    <svg width="500" height="500" id="space">
-        <circle cx="250" cy="250" r="40" class="innerOrbit"></circle>
-        <circle cx="250" cy="250" r="55" class="innerOrbit"></circle>
-        <circle cx="250" cy="250" r="70" class="outerOrbit"></circle>
+    <svg width="500" height="500" id="space" viewBox="-35 -35 500 500" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50%" cy="50%" r="40" class="innerOrbit"></circle>
+        <circle cx="50%" cy="50%" r="55" class="innerOrbit"></circle>
+        <circle cx="50%" cy="50%" r="70" class="outerOrbit"></circle>
+        <circle cx="50%" cy="50%" r="90" class="outerOrbit"></circle>
+        <circle cx="50%" cy="50%" r="120" class="outerOrbit"></circle>
+        <circle cx="50%" cy="50%" r="150" class="outerOrbit"></circle>
+        <circle cx="50%" cy="50%" r="180" class="outerOrbit"></circle>
+        <circle cx="50%" cy="50%" r="210" class="outerOrbit"></circle>
 
         <defs>
-            <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-                <stop offset="0%" style="stop-color:rgb(255,255,0); stop-opacity:0" />
-                <stop offset="100%" style="stop-color:rgb(255,255,224);stop-opacity:1" />
+            <radialGradient id="sunGrad">
+                <stop offset="10%" stop-color="gold"; />
+                <stop offset="95%" stop-color="rgb(255,255,224)"; />
             </radialGradient>
         </defs>
+        <circle cx="50%" cy="50%" r="25" id="sun"></circle>
 
-        <circle cx="250" cy="250" r="25" id="sun"></circle>
-        <circle cx="250" cy="250" r="4" id="mercury"></circle>
-        <circle cx="250" cy="250" r="6" id="venus"></circle>
-        <circle cx="250" cy="250" r="7" id="earth"></circle>
+        <circle cx="50%" cy="50%" r="4" id="mercury"></circle>
+        <circle cx="50%" cy="50%" r="6" id="venus"></circle>
+        <circle cx="50%" cy="50%" r="7" id="earth"></circle>
+        <circle cx="50%" cy="50%" r="8" id="mars"></circle>
+        <circle cx="50%" cy="50%" r="10" id="jupiter"></circle>
+        <circle cx="50%" cy="50%" r="10" id="saturn"></circle>
     </svg>
 </div>
 
