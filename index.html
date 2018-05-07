@@ -48,7 +48,13 @@
         <circle class="solarCentre" cx="50%" cy="50%" r="25" fill="url(#sun)"></circle>
 
         <!--Mercury-->
-        <circle cx="50%" cy="50%" r="4" id="mercury"></circle>
+        <defs>
+            <radialGradient id="mercury">
+                <stop offset="30%" stop-color="#D3D3D3"></stop>
+                <stop offset="90%" stop-color="#A9A9A9"></stop>
+            </radialGradient>
+        </defs>
+        <circle class="planet1" cx="50%" cy="50%" r="4" fill="url(#mercury)"></circle>
 
         <!--Venus-->
         <defs>
@@ -59,16 +65,16 @@
                 <stop offset="90%" stop-color="#e68501"></stop>
             </linearGradient>
         </defs>
-        <circle class="planet2" cx="50%" cy="50%" r="6" fill="url(#venus)"></circle>
+        <circle class="planet2" cx="50%" cy="50%" r="7" fill="url(#venus)"></circle>
 
         <!-- Earth -->
         <defs>
             <radialGradient id="earth">
-                <stop offset="20%" stop-color="#0eba28"></stop>
-                <stop offset="95%" stop-color="#00abff"></stop>
+                <stop offset="30%" stop-color="#0eba28"></stop>
+                <stop offset="90%" stop-color="#00abff"></stop>
             </radialGradient>
         </defs>
-        <circle class="planet3" cx="50%" cy="50%" r="6" fill="url(#earth)"></circle>
+        <circle class="planet3" cx="50%" cy="50%" r="7" fill="url(#earth)"></circle>
 
         <!--Mars-->
         <defs>
@@ -78,19 +84,60 @@
                 <stop offset="80%" stop-color="#A52A2A"></stop>
             </linearGradient>
         </defs>
-        <circle class="planet4" cx="50%" cy="50%" r="7" fill="url(#mars)"></circle>
+        <circle class="planet4" cx="50%" cy="50%" r="8" fill="url(#mars)"></circle>
 
         <!--Jupiter-->
-        <circle cx="50%" cy="50%" r="12" id="jupiter"></circle>
+        <defs>
+            <linearGradient id="jupiter" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="sandybrown"></stop>
+                <stop offset="100%" stop-color="grey"></stop>
+            </linearGradient>
+        </defs>
+        <circle class="planet5" cx="50%" cy="50%" r="13" fill="url(#jupiter)"></circle>
 
         <!--Saturn-->
-        <circle cx="50%" cy="50%" r="8" id="saturn"></circle>
+        <defs>
+            <linearGradient id="saturn" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#fff4d8"></stop>
+                <stop offset="30%" stop-color="#a2a58b"></stop>
+                <stop offset="40%" stop-color="#93a590"></stop>
+                <stop offset="60%" stop-color="#eae7e4"></stop>
+                <stop offset="80%" stop-color="#d6d2a2"></stop>
+                <stop offset="100%" stop-color="#a2a59d"></stop>
+            </linearGradient>
+        </defs>
+        <circle class="planet6" cx="50%" cy="50%" r="11" fill="url(#saturn)"></circle>
+
+        <!--Saturn-ring-->
+        <defs>
+            <linearGradient id="saturnRing" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#ffffff" stop-opacity="0"></stop>
+                <stop offset="15%" stop-color="#eae7e4" stop-opacity="0"></stop>
+                <stop offset="100%" stop-color="#a2a59d" stop-opacity="1"></stop>
+            </linearGradient>
+        </defs>
+        <ellipse class="planet6Ring" cx="50%" cy="50%" rx="15" ry="4" stroke-width="4" stroke="url(#saturnRing)" fill="none"></ellipse>
 
         <!--Uranus-->
-        <circle cx="50%" cy="50%" r="7" id="uranus"></circle>
+        <defs>
+            <linearGradient id="uranus" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#8c95e6"></stop>
+                <stop offset="20%" stop-color="#af9dff"></stop>
+                <stop offset="40%" stop-color="#8289d0"></stop>
+                <stop offset="60%" stop-color="#acc2ff"></stop>
+                <stop offset="100%" stop-color="#6179a8"></stop>
+            </linearGradient>
+        </defs>
+        <circle class="planet7" cx="50%" cy="50%" r="11" fill="url(#uranus)"></circle>
 
         <!--Neptune-->
-        <circle cx="50%" cy="50%" r="7" id="neptune"></circle>
+        <defs>
+            <linearGradient id="neptune" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#d294e6"></stop>
+                <stop offset="70%" stop-color="#22daff"></stop>
+            </linearGradient>
+        </defs>
+        <circle class="planet8" cx="50%" cy="50%" r="8" fill="url(#neptune)"></circle>
 
     </svg>
 

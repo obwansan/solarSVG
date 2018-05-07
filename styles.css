@@ -20,46 +20,41 @@ body {
     fill-opacity: 0;
 }
 
-#mercury {
-    fill: #D3D3D3;
-    animation: mercuryOrbit 6s linear infinite;
+.planet1 {
+    animation: mercuryOrbit 10s linear infinite;
 }
 
 .planet2 {
-    animation: venusOrbit 8s linear infinite;
+    animation: venusOrbit 15s linear infinite;
 }
 
 .planet3 {
-    animation: earthOrbit 10s linear infinite;
+    animation: earthOrbit 20s linear infinite;
 }
 
 .planet4 {
-    animation: marsOrbit 15s linear infinite;
+    animation: marsOrbit 25s linear infinite;
 }
 
-#jupiter {
-    fill: #C8BDAB;
-    animation: jupiterOrbit 20s linear infinite;
+.planet5 {
+    animation: jupiterOrbit 30s linear infinite;
 }
 
-#saturn {
-    fill: #E8BE87;
-    animation: saturnOrbit 20s linear infinite;
+.planet6 {
+    animation: saturnOrbit 35s linear infinite;
 }
 
-#uranus {
-    fill: #D3F8FB;
-    animation: uranusOrbit 25s linear infinite;
+.planet6Ring {
+    animation: saturnOrbit 35s linear infinite;
 }
 
-#neptune {
-    fill: #5083F7;
-    animation: neptuneOrbit 30s linear infinite;
+.planet7 {
+    animation: uranusOrbit 45s linear infinite;
 }
 
-/*************************
-keyFrames
-**************************/
+.planet8 {
+    animation: neptuneOrbit 50s linear infinite;
+}
 
 @keyframes mercuryOrbit {
     from {
@@ -77,7 +72,6 @@ keyFrames
 
 @keyframes venusOrbit {
     from {
-        /*transition-timing-function: linear;*/
         transform: rotate(0deg)
         translateX(-70px)
         rotate(360deg)
@@ -91,7 +85,6 @@ keyFrames
 
 @keyframes earthOrbit {
     from {
-        transition-timing-function: linear;
         transform:  rotate(0deg)
         translate(-100px)
         rotate(0deg)
@@ -105,7 +98,6 @@ keyFrames
 
 @keyframes marsOrbit {
     from {
-        transition-timing-function: linear;
         transform: rotate(0deg)
         translate(-130px)
         rotate(0deg)
@@ -119,7 +111,6 @@ keyFrames
 
 @keyframes jupiterOrbit {
     from {
-        transition-timing-function: linear;
         transform: rotate(0deg)
         translate(-170px)
         rotate(0deg)
@@ -133,7 +124,6 @@ keyFrames
 
 @keyframes saturnOrbit {
     from {
-        transition-timing-function: linear;
         transform: rotate(0deg)
         translate(-210px)
         rotate(0deg)
@@ -147,7 +137,6 @@ keyFrames
 
 @keyframes uranusOrbit {
     from {
-        transition-timing-function: linear;
         transform: rotate(0deg)
         translate(-250px)
         rotate(0deg)
@@ -161,7 +150,6 @@ keyFrames
 
 @keyframes neptuneOrbit {
     from {
-        transition-timing-function: linear;
         transform: rotate(0deg)
         translate(-290px)
         rotate(0deg)
