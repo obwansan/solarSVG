@@ -1,59 +1,60 @@
-
-#container {
-    background-color: #000000;
-    width: 600px;
-    height: 600px;
+body {
+    margin: 0;
+    background-image: url("starBackground.jpeg");
 }
 
-#sun {
-    fill: url(#sunGrad);
+.container {
+    height: 650px;
+}
+
+.solarCentre {
     position: absolute;
     top: 200px;
     left: 200px;
 }
 
-#mercury {
-    fill: #D4B79E;
-    animation: mercuryOrbit 5s linear infinite;
-}
-
-#venus {
-    fill: #AC682C;
-    animation: venusOrbit 4s linear infinite;
-}
-
-#earth {
-    fill: #90B57A;
-    animation: earthOrbit 6s linear infinite;
-}
-
-#mars {
-    fill: #D84B32;
-    animation: marsOrbit 7s linear infinite;
-}
-
-#jupiter {
-    fill: #C8BDAB;
-    animation: jupiterOrbit 9s linear infinite;
-}
-
-#saturn {
-    fill: #E8BE87;
-    animation: saturnOrbit 8s linear infinite;
-}
-
-.innerOrbit {
+.orbit {
     stroke: #5D5B5E;
     stroke-width: 1;
     stroke-opacity: 0.5;
     fill-opacity: 0;
 }
 
-.outerOrbit {
-    stroke: #5D5B5E;
-    stroke-width: 1.5;
-    stroke-opacity: 0.7;
-    fill-opacity: 0;
+#mercury {
+    fill: #D3D3D3;
+    animation: mercuryOrbit 6s linear infinite;
+}
+
+.planet2 {
+    animation: venusOrbit 8s linear infinite;
+}
+
+.planet3 {
+    animation: earthOrbit 10s linear infinite;
+}
+
+.planet4 {
+    animation: marsOrbit 15s linear infinite;
+}
+
+#jupiter {
+    fill: #C8BDAB;
+    animation: jupiterOrbit 20s linear infinite;
+}
+
+#saturn {
+    fill: #E8BE87;
+    animation: saturnOrbit 20s linear infinite;
+}
+
+#uranus {
+    fill: #D3F8FB;
+    animation: uranusOrbit 25s linear infinite;
+}
+
+#neptune {
+    fill: #5083F7;
+    animation: neptuneOrbit 30s linear infinite;
 }
 
 /*************************
@@ -66,29 +67,25 @@ keyFrames
         transform:  rotate(0deg)
                     translate(-40px)
                     rotate(0deg)
-
     }
     to {
         transform: rotate(360deg)
                     translate(-40px)
                     rotate(-360deg)
-
     }
 }
 
 @keyframes venusOrbit {
     from {
-        transition-timing-function: linear;
+        /*transition-timing-function: linear;*/
         transform: rotate(0deg)
-        translate(-55px)
-        rotate(0deg)
-
+        translateX(-70px)
+        rotate(360deg)
     }
     to {
         transform: rotate(360deg)
-        translate(-55px)
-        rotate(-360deg)
-
+        translateX(-70px)
+        rotate(0deg)
     }
 }
 
@@ -96,15 +93,13 @@ keyFrames
     from {
         transition-timing-function: linear;
         transform:  rotate(0deg)
-        translate(-70px)
+        translate(-100px)
         rotate(0deg)
-
     }
     to {
         transform: rotate(360deg)
-        translate(-70px)
+        translate(-100px)
         rotate(-360deg)
-
     }
 }
 
@@ -112,15 +107,13 @@ keyFrames
     from {
         transition-timing-function: linear;
         transform: rotate(0deg)
-        translate(-90px)
+        translate(-130px)
         rotate(0deg)
-
     }
     to {
         transform: rotate(360deg)
-        translate(-90px)
+        translate(-130px)
         rotate(-360deg)
-
     }
 }
 
@@ -128,15 +121,13 @@ keyFrames
     from {
         transition-timing-function: linear;
         transform: rotate(0deg)
-        translate(-120px)
+        translate(-170px)
         rotate(0deg)
-
     }
     to {
         transform: rotate(360deg)
-        translate(-120px)
+        translate(-170px)
         rotate(-360deg)
-
     }
 }
 
@@ -144,26 +135,40 @@ keyFrames
     from {
         transition-timing-function: linear;
         transform: rotate(0deg)
-        translate(-150px)
+        translate(-210px)
         rotate(0deg)
-
     }
     to {
         transform: rotate(360deg)
-        translate(-150px)
+        translate(-210px)
         rotate(-360deg)
-
     }
 }
 
+@keyframes uranusOrbit {
+    from {
+        transition-timing-function: linear;
+        transform: rotate(0deg)
+        translate(-250px)
+        rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+        translate(-250px)
+        rotate(-360deg)
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
+@keyframes neptuneOrbit {
+    from {
+        transition-timing-function: linear;
+        transform: rotate(0deg)
+        translate(-290px)
+        rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+        translate(-290px)
+        rotate(-360deg)
+    }
+}

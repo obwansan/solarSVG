@@ -6,36 +6,95 @@
 </head>
 <body>
 
-<div id="container">
-    <svg width="600" height="600" id="space" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="50%" cy="50%" r="40" class="innerOrbit"></circle>
-        <circle cx="50%" cy="50%" r="55" class="innerOrbit"></circle>
-        <circle cx="50%" cy="50%" r="70" class="outerOrbit"></circle>
-        <circle cx="50%" cy="50%" r="90" class="outerOrbit"></circle>
-        <circle cx="50%" cy="50%" r="120" class="outerOrbit"></circle>
-        <circle cx="50%" cy="50%" r="150" class="outerOrbit"></circle>
-        <circle cx="50%" cy="50%" r="180" class="outerOrbit"></circle>
-        <circle cx="50%" cy="50%" r="210" class="outerOrbit"></circle>
+<div class="container">
 
+    <svg width="100%" height="100%" id="space" xmlns="http://www.w3.org/2000/svg">
+
+    <!--Orbits-->
+
+        <!--Mercury-->
+        <circle cx="50%" cy="50%" r="40" class="orbit"></circle>
+
+        <!--Venus-->
+        <circle cx="50%" cy="50%" r="70" class="orbit"></circle>
+
+        <!--Earth-->
+        <circle cx="50%" cy="50%" r="100" class="orbit"></circle>
+
+        <!--Mars-->
+        <circle cx="50%" cy="50%" r="130" class="orbit"></circle>
+
+        <!--Jupiter-->
+        <circle cx="50%" cy="50%" r="170" class="orbit"></circle>
+
+        <!--Saturn-->
+        <circle cx="50%" cy="50%" r="210" class="orbit"></circle>
+
+        <!--Uranus-->
+        <circle cx="50%" cy="50%" r="250" class="orbit"></circle>
+
+        <!--Neptune-->
+        <circle cx="50%" cy="50%" r="290" class="orbit"></circle>
+
+    <!--Planets-->
+
+        <!-- Sun -->
         <defs>
-            <radialGradient id="sunGrad">
-                <stop offset="10%" stop-color="#DAA520"; />
-                <stop offset="95%" stop-color="#FFDF00"; />
+            <radialGradient id="sun">
+                <stop offset="60%" stop-color="yellow"></stop>
+                <stop offset="100%" stop-color="orange"></stop>
             </radialGradient>
         </defs>
-        <circle cx="50%" cy="50%" r="25" id="sun"></circle>
+        <circle class="solarCentre" cx="50%" cy="50%" r="25" fill="url(#sun)"></circle>
 
-        <circle cx="50%" cy="50%" r="3" id="mercury"></circle>
-        <circle cx="50%" cy="50%" r="6" id="venus"></circle>
-        <circle cx="50%" cy="50%" r="6" id="earth"></circle>
-        <circle cx="50%" cy="50%" r="3" id="mars"></circle>
-        <circle cx="50%" cy="50%" r="10" id="jupiter"></circle>
-        <circle cx="50%" cy="50%" r="10" id="saturn"></circle>
-        <circle cx="50%" cy="50%" r="10" id="uranus"></circle>
-        <circle cx="50%" cy="50%" r="10" id="neptune"></circle>
+        <!--Mercury-->
+        <circle cx="50%" cy="50%" r="4" id="mercury"></circle>
+
+        <!--Venus-->
+        <defs>
+            <linearGradient id="venus" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#e6941e"></stop>
+                <stop offset="60%" stop-color="#b76207"></stop>
+                <stop offset="70%" stop-color="#7c6b23"></stop>
+                <stop offset="90%" stop-color="#e68501"></stop>
+            </linearGradient>
+        </defs>
+        <circle class="planet2" cx="50%" cy="50%" r="6" fill="url(#venus)"></circle>
+
+        <!-- Earth -->
+        <defs>
+            <radialGradient id="earth">
+                <stop offset="20%" stop-color="#0eba28"></stop>
+                <stop offset="95%" stop-color="#00abff"></stop>
+            </radialGradient>
+        </defs>
+        <circle class="planet3" cx="50%" cy="50%" r="6" fill="url(#earth)"></circle>
+
+        <!--Mars-->
+        <defs>
+            <linearGradient id="mars" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#ff0000"></stop>
+                <stop offset="40%" stop-color="#ed8a34"></stop>
+                <stop offset="80%" stop-color="#A52A2A"></stop>
+            </linearGradient>
+        </defs>
+        <circle class="planet4" cx="50%" cy="50%" r="7" fill="url(#mars)"></circle>
+
+        <!--Jupiter-->
+        <circle cx="50%" cy="50%" r="12" id="jupiter"></circle>
+
+        <!--Saturn-->
+        <circle cx="50%" cy="50%" r="8" id="saturn"></circle>
+
+        <!--Uranus-->
+        <circle cx="50%" cy="50%" r="7" id="uranus"></circle>
+
+        <!--Neptune-->
+        <circle cx="50%" cy="50%" r="7" id="neptune"></circle>
+
     </svg>
-</div>
 
+</div>
 
 </body>
 </html>
