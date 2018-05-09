@@ -1,10 +1,12 @@
 body {
     margin: 0;
     background-image: url("starBackground.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container {
-    height: 650px;
+    height: 900px;
 }
 
 .solarCentre {
@@ -60,12 +62,12 @@ body {
     from {
         transition-timing-function: linear;
         transform:  rotate(0deg)
-                    translate(-40px)
+                    translate(-50px)
                     rotate(0deg)
     }
     to {
         transform: rotate(360deg)
-                    translate(-40px)
+                    translate(-50px)
                     rotate(-360deg)
     }
 }
@@ -73,12 +75,12 @@ body {
 @keyframes venusOrbit {
     from {
         transform: rotate(0deg)
-        translateX(-70px)
+        translateX(-90px)
         rotate(360deg)
     }
     to {
         transform: rotate(360deg)
-        translateX(-70px)
+        translateX(-90px)
         rotate(0deg)
     }
 }
@@ -86,12 +88,12 @@ body {
 @keyframes earthOrbit {
     from {
         transform:  rotate(0deg)
-        translate(-100px)
+        translate(-130px)
         rotate(0deg)
     }
     to {
         transform: rotate(360deg)
-        translate(-100px)
+        translate(-130px)
         rotate(-360deg)
     }
 }
@@ -99,12 +101,12 @@ body {
 @keyframes marsOrbit {
     from {
         transform: rotate(0deg)
-        translate(-130px)
+        translate(-160px)
         rotate(0deg)
     }
     to {
         transform: rotate(360deg)
-        translate(-130px)
+        translate(-160px)
         rotate(-360deg)
     }
 }
@@ -112,12 +114,12 @@ body {
 @keyframes jupiterOrbit {
     from {
         transform: rotate(0deg)
-        translate(-170px)
+        translate(-210px)
         rotate(0deg)
     }
     to {
         transform: rotate(360deg)
-        translate(-170px)
+        translate(-210px)
         rotate(-360deg)
     }
 }
@@ -125,12 +127,12 @@ body {
 @keyframes saturnOrbit {
     from {
         transform: rotate(0deg)
-        translate(-210px)
+        translate(-260px)
         rotate(0deg)
     }
     to {
         transform: rotate(360deg)
-        translate(-210px)
+        translate(-260px)
         rotate(-360deg)
     }
 }
@@ -138,12 +140,12 @@ body {
 @keyframes uranusOrbit {
     from {
         transform: rotate(0deg)
-        translate(-250px)
+        translate(-320px)
         rotate(0deg)
     }
     to {
         transform: rotate(360deg)
-        translate(-250px)
+        translate(-320px)
         rotate(-360deg)
     }
 }
@@ -151,12 +153,12 @@ body {
 @keyframes neptuneOrbit {
     from {
         transform: rotate(0deg)
-        translate(-290px)
+        translate(-370px)
         rotate(0deg)
     }
     to {
         transform: rotate(360deg)
-        translate(-290px)
+        translate(-370px)
         rotate(-360deg)
     }
 }
